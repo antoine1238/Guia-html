@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>guia html a profundidad</title>
+        <!-- icono: que la img en cuestion termine en .ico -->
+        <link rel="icon" href="https://scontent.fmad13-1.fna.fbcdn.net/v/t1.0-1/c0.0.240.240a/p240x240/130217041_10214763359597310_2948920162307203928_o.jpg?_nc_cat=106&ccb=2&_nc_sid=dbb9e7&_nc_ohc=akMLr2Y3A50AX_ZitzE&_nc_ht=scontent.fmad13-1.fna&tp=27&oh=ca96d6c4fa6f54e20ab2cbe800dd43a8&oe=60473858">
+
+        <!--metadata -->
+        <!-- charset="utf-8": hace que acepte los acentos-->
+        <meta charset="utf-8"> 
+
+        <!-- content: son las palabras claves por la cual tu pagina se encontrará en internet.. CEO  -->
+        <meta name="keywords" content="harina,pan,leche,huevo">
+
+        <!-- description="" -->
+        <meta name="description" content="esta es una empresa que posee alimentos de gran calidad">
+
+        <!-- author: especifica el dueño de la pagina o si tiene copiright y su dueño-->
+        <meta name="author" content="Antoine manuel">
+        <meta name="copyright" content="Facebook inc.">
+
+        <!-- index/noindex: para saber si tu pagina posee un index.html o no -->
+        <meta name="robots" content="index">
+
+    </head>
+    <body>
+        <!-- las etiquetas (<h>, <p>) ocupan todo el espacio de ancho y el Margin que es el espacio de altura predefinido por esa etiqueta.. 
+            por lo que al agregar otra etiqueta se mostrará por debajo -->
+        <h1>hola mundo</h1> 
+        <h2>hola mundo</h2>
+        <h3>hola mundo</h3>
+        <h4>hola mundo</h4>
+        <h5>hola mundo</h5>
+        <h6>hola mundo</h6>
+        
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet culpa voluptatum, voluptatibus 
+            vel harum tempore inventore eligendi omnis, doloremipsum exercitationem, deserunt blanditiis sint
+             est nobis voluptates odio earum beatae.
+        </p>
+
+        <!-- espaciado en textos, parrafos, etc.. hace que salte una linea hacia abajo-->
+        <br>
+
+        <!-- estas estiquetas no consumen todo el espacio por lo que van apiladas una al lado de la otra al reflejarse en la pagina -->
+        <b>Negrita</b>
+        <i>itallica == letra inclinada</i>
+        <strike>tachada</strike>
+        <small>pequeñito</small>
+        <br>
+
+        <!-- enlaces -->
+        <a href="https://facebook.com">Enlace a facebook</a>
+        <br>
+        <a href="https://facebook.com" target="_BLANCK">Enlace a facebook abriendo otra página nueva</a>
+        <br>
+        <a href="index2.html">enlace a index2</a>
+        <br>
+        <a href="/cosas/cosas.html">enlace a cosas</a>
+        <br>
+
+        <!-- enlaces de traslado: para moverse rapidamente en la misma pagina usando el atributo "id" -->
+        <a href="#footer">Trasladarse</a>
+        <br>
+        
+        <!-- listas -->
+        <h2>Lista de compras desordenada</h2>
+        <ul>
+            <li>Leche</li>
+            <li>Harina</li>
+            <li>Huevos</li>
+            <li>Zanahoria</li>
+            <li>Un Riñon</li>
+        </ul>
+
+        <h2>Lista de compras ordenada</h2>
+        <ol>
+            <li>Leche</li>
+            <li>Harina</li>
+            <li>Huevos</li>
+            <li>Zanahoria</li>
+            <li>Un Riñon</li>
+        </ol>
+
+        <br>
+        <!-- Tablas: los atributos mejor aplicarlos con CSS -->
+        <table border="1px">
+            <tr>
+                <td><b>Nombre</b></td>
+                <td><b>Apellido</b></td>
+                <td><b>Edad</b></td>
+            </tr>
+            <tr>
+                <td>antoine</td>
+                <td>manuel</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>charles</td>
+                <td>manuel</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Fernando</td>
+                <td>manuel</td>
+                <td>56</td>
+            </tr>
+        </table>
+
+        <br>
+        <!-- divs: actuan como separadores y se usan para darle diferentes propiedades con el CSS.. aunque si solo usas html es casi igual al usar la etiqueta <p> en funcionalidad -->
+        <div>
+            <b>Primer div</b>
+        </div>
+        <div>
+            <b>Segundo div</b>
+        </div>
+        <div>
+            <b>Tercer div</b>
+        </div>  
+
+        <!-- center: centra el contenido tal cual.. mejor usar CSS ya que solo puede centrar una etiqueta a la vez  -->
+        <center>
+            <h1>mensaje centrado</h1>
+        </center>
+
+        <!-- imagenes: el "title" y el "alt" mejoran el CEO. no recomendable asignar el width y el heigth en html.. para eso está CSS. -->
+        <h2>Imagenes:</h2>
+        <img src="https://scontent.fmad13-1.fna.fbcdn.net/v/t1.0-1/c0.0.240.240a/p240x240/130217041_10214763359597310_2948920162307203928_o.jpg?_nc_cat=106&ccb=2&_nc_sid=dbb9e7&_nc_ohc=akMLr2Y3A50AX_ZitzE&_nc_ht=scontent.fmad13-1.fna&tp=27&oh=ca96d6c4fa6f54e20ab2cbe800dd43a8&oe=60473858" alt="Antoine manuel" title="Programador" height="220">
+        <img src="/darius.jpg" width="400">
+
+        <!-- videos: el atributo controls hace que el video tenga los controles para visualizar, pausar, volumen, etc-->
+        <h2>Videos:</h2>
+        <video src="/breaking_Benjamin.mp4" controls>bla bla bla</video>
+
+        <!-- audios: aqui tambien se puede utilizar el atributo controls-->
+        <h2>Audios:</h2>
+        <audio src="/breaking_Benjamin.mp4" controls ></audio>
+
+        <!-- form: -->
+
+        <form method="">
+            <input type="text" required value="texto adentro">
+            <input type="password">
+            <input type="number">
+            <input type="email">
+            <input type="color">
+            <input type="range" min="0" max="10">
+            <input type="date">
+            <input type="time">
+            <input type="button" value="algo">
+            <input type="submit">
+            <textarea readonly>contenido del textarea </textarea>
+        </form>
+
+        <!-- header/nav: barra de navegación -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="https://youtube.com">Youtube</a></li>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- article/section: contenido -->
+        <article>
+            <section>
+                <h1>quien es mas fuerte, gotzilla o king kong.? </h1>
+
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa praesentium amet, minus placeat repellendus deleniti, nulla doloremque, 
+                    fugit distinctio modi dicta eos animi porro rerum obcaecati excepturi expedita rem consectetur. Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Minus inventore odit natus ratione, voluptate numquam obcaecati molestiae saepe nisi fugiat aut at tenetur, esse architecto. 
+                    Officiis, doloribus. Explicabo, odit velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio expedita perferendis harum autem.<br>
+                    Cupiditate quia est unde fuga blanditiis soluta sint fugiat, inventore rerum neque, aliquam placeat eos in nostrum!
+                </h3>
+            </section>
+        </article>
+
+        <!-- aside: va a un costado del articulo.. es opcional pero aporta contenido tal vez relevante -->
+        <aside>
+            <h2>contenido extra</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eligendi, impedit natus doloremque error explicabo sunt saepe fugit et. 
+                Inventore reprehenderit hic a illum ipsa ab officia maxime nihil ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam doloremque 
+                praesentium vero, ipsa nostrum quod dicta, magni commodi quos quas et, esse dolor a. Praesentium possimus reiciendis esse fugiat assumenda.
+            </p>
+        </aside>
+        
+
+        <!-- footer: pie de página -->
+        <footer id="footer">
+            <h4>Copyright - todos los derechos reservados 2021</h4>
+            <a href="">sobre nosotros</a>
+            <a href="">registrarse</a>
+            <a href="">inicio</a>
+        </footer>
+
+    </body>
+</html>
